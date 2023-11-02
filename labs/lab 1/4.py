@@ -1,0 +1,5 @@
+gi = input("Оцените развлекательный комплекс:\n>>>")
+gigi = gi.find('весело')
+gigigi = gi.find('увлекательно')
+gigigigi = gi.find('развлечения')
+print("Результат анализа:", gigi, gigigi, gigigigi)
