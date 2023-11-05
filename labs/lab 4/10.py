@@ -1,7 +1,7 @@
-s = input('Введите текст: ')
-s2 = ''
-for i in range(0, len(s), 2):
-    if s[i - 1] == ' ':
-        s2 += ' '
-        s2 += s[i]
-        print(s2)
+message = ('ППррииввеетт!! ККаакк ддееллаа?? ССееггоодднняя ттааккааяя ххоорроошшааяя ппооггооддаа, ммоожжеетт '
+           'ппооггуулляяеемм??')
+message2 = ''
+for i in range(len(message)):
+    if i == len(message) - 1 or message[i] != message[i+1]:
+        message2 += message[i]
+        print(message2)
