@@ -1,12 +1,11 @@
 birds = {}
 while True:
-    line = input('Введите название птиц и их количество: ')
-    if line == '':
+    observation = input()
+    if observation == '':
+        print(birds)
         break
-bird, count = line.split(": ")
-count = int(count)
-if bird in birds:
-    birds[bird] += count
-else:
-    birds[bird] = count
-print(birds)
+    bird, count = observation.split(": ")
+    if bird in birds:
+        birds[bird] += int(count)
+    else:
+        birds[bird] = int(count)
