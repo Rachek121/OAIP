@@ -1,5 +1,5 @@
 while True:
     a = input('Введи строку:')
-    if a == '':
+    while a == '':
         break
     print('Столько ты написал: ', len(a))
