@@ -1,8 +1,8 @@
-def factorial(n):
-    if n == 0:
+def factorial(adn):
+    if adn == 0:
         return 1
     else:
-        return n * factorial(n - 1)
+        return adn * factorial(adn - 1)
 
 
 number = int(input("Введите число: "))

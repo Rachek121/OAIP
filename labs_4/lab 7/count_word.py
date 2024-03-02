@@ -1,5 +1,5 @@
 def count_word(s):
-    vowels = "aeiouyAEIOUYауоыиэяюёе"
+    vowels = "aeiouyAEIOUYауоыиэяюёеАУОЫИЭЯЮЁЕ"
     if len(s) == 0:
         return 0
     else:
@@ -7,6 +7,7 @@ def count_word(s):
             return 1 + count_word(s[1:])
         else:
             return count_word(s[1:])
+
 
 input_string = input("Введите строку: ")
 result = count_word(input_string)
